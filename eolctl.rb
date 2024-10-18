@@ -1,4 +1,4 @@
-class YourCliTool < Formula
+class Eolctl < Formula
     desc "eolctl is Go CLI tool that provide capabillities to query EOL information for varius of products. "
     homepage "https://github.com/asafdavid23/eolctl"
     url "https://github.com/asafdavid23/eolctl/archive/v1.0.0.tar.gz"
