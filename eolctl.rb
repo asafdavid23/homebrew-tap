@@ -12,6 +12,6 @@ class YourCliTool < Formula
     end
   
     test do
-      system "#{bin}/your-cli-tool", "--version"
+      system "#{bin}/eolctl", "--version"
     end
   end
