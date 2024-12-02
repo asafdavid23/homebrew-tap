@@ -8,7 +8,7 @@ class Eolctl < Formula
     depends_on "go" => :build
   
     def install
-      ldflags = "-X 'eolctl/cmd.Version=#{version}'"
+      ldflags = "-s -w -X main.version=#{version}"
       system "go", "build", *std_go_args(ldflags: ldflags)
     end
   
