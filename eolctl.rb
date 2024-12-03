@@ -5,13 +5,14 @@ class Eolctl < Formula
     sha256 "0e946cdfdcccb812b4432f91418f06f4ed4d431cea10a088a79dbe45850e6f82"
     license "MIT"
   
-    depends_on "go" => :build
+  depends_on "go" => :build
 
-    def install
-      ldflags = "-X cmd.Version=#{version}"
-      system "go", "build", *std_go_args(ldflags: ldflags)
-    end
-  
-    test do
-      assert_match version.to_s, shell_output("#{bin}/eolctl --version")
-    end
+  def install
+    ldflags = "-X main.Version=#{version}"
+    system "go", "build", *std_go_args(ldflags: ldflags)
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/eolctl --version")
+  end
+end
