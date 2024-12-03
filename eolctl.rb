@@ -6,12 +6,12 @@ class Eolctl < Formula
     license "MIT"
   
     depends_on "go" => :build
-  
+
     def install
-      system "go", "build", *std_go_args
+      ldflags = "-X cmd.Version=#{version}"
+      system "go", "build", *std_go_args(ldflags: ldflags)
     end
   
     test do
-      system "#{bin}/eolctl", "--version"
+      assert_match version.to_s, shell_output("#{bin}/eolctl --version")
     end
-  end
