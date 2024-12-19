@@ -1,8 +1,8 @@
 class Eolctl < Formula
     desc "eolctl is Go CLI tool that provide capabillities to query EOL information for varius of products. "
     homepage "https://github.com/asafdavid23/eolctl"
-    url "https://github.com/asafdavid23/eolctl/archive/v1.1.4.tar.gz"
-    sha256 "d8217bfd3835b8b200b521efa59ff58a08df33333b461d7da66f540736f53dec"
+    url "https://github.com/asafdavid23/eolctl/archive/v1.2.0.tar.gz"
+    sha256 "ae334107df7d8024c4a6932d7e2beb035ced198d4442917da4e8a0bf04b446ec"
     license "MIT"
   
   depends_on "go" => :build
