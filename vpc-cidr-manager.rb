@@ -1,8 +1,8 @@
 class VpcCidrManager < Formula
     desc "A Simple CLI tool to manage AWS VPC CIDR block reservations stored in DynamoDB."
     homepage "https://github.com/asafdavid23/vpc-cidr-manager"
-    url "https://github.com/asafdavid23/vpc-cidr-manager/archive/v1.0.1.tar.gz"
-    sha256 "c5c4d0bbf0ab83666788bdcce71dda13fcdea194e8fa297ffe19511894ae9e94"
+    url "https://github.com/asafdavid23/vpc-cidr-manager/archive/v1.0.2.tar.gz"
+    sha256 "a9e849cdcb0486be90f24fab12a83ed6016638a20e4b00f4cd27ee575f76ac6d"
     license "MIT"
   
   depends_on "go" => :build
