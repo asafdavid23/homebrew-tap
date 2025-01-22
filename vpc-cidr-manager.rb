@@ -1,5 +1,5 @@
-class Eolctl < Formula
-    desc "eolctl is Go CLI tool that provide capabillities to query EOL information for varius of products. "
+class VpcCidrManager < Formula
+    desc "A Simple CLI tool to manage AWS VPC CIDR block reservations stored in DynamoDB."
     homepage "https://github.com/asafdavid23/vpc-cidr-manager"
     url "https://github.com/asafdavid23/vpc-cidr-manager/archive/v1.0.1.tar.gz"
     sha256 "c5c4d0bbf0ab83666788bdcce71dda13fcdea194e8fa297ffe19511894ae9e94"
